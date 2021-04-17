@@ -13,6 +13,7 @@
     "dependencies": {
         "@dfgpublicidade/node-app-module": "git+https://github.com/dfg-publicidade/node-app-module.git",
         "@types/fs-extra": "^9.0.5",
+        "@types/mime": "^1.3.2",
         "app-root-path": "^3.0.0",
         "archiver": "^5.0.2",
         "async-csv": "^2.1.3",
