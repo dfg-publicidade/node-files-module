@@ -5,7 +5,7 @@ class Files {
     public static async getJson(dir: string): Promise<any> {
         try {
             // eslint-disable-next-line no-bitwise
-            fs.accessSync(dir, fs.constants.R_OK | fs.constants.W_OK);
+            fs.accessSync(dir, fs.constants.R_OK);
         }
         catch (err) {
             throw new Error(`File not found or not accessible: ${dir}`);
