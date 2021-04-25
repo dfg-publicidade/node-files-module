@@ -9,7 +9,7 @@ class Files {
     static async getJson(dir) {
         try {
             // eslint-disable-next-line no-bitwise
-            fs_extra_1.default.accessSync(dir, fs_extra_1.default.constants.R_OK | fs_extra_1.default.constants.W_OK);
+            fs_extra_1.default.accessSync(dir, fs_extra_1.default.constants.R_OK);
         }
         catch (err) {
             throw new Error(`File not found or not accessible: ${dir}`);
