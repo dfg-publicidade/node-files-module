@@ -8,7 +8,7 @@ class Files {
             fs.accessSync(dir, fs.constants.R_OK | fs.constants.W_OK);
         }
         catch (err) {
-            throw new Error('File not found or not accessible');
+            throw new Error(`File not found or not accessible: ${dir}`);
         }
 
         return JSON.parse(fs.readFileSync(dir, 'utf-8'));

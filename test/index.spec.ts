@@ -24,6 +24,6 @@ describe('index.ts', (): void => {
         }
 
         expect(fileError).to.exist;
-        expect(fileError.message).to.be.eq('File not found or not accessible');
+        expect(fileError.message).to.be.eq('File not found or not accessible: undefined');
     });
 });

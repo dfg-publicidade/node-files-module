@@ -12,7 +12,7 @@ class Files {
             fs_extra_1.default.accessSync(dir, fs_extra_1.default.constants.R_OK | fs_extra_1.default.constants.W_OK);
         }
         catch (err) {
-            throw new Error('File not found or not accessible');
+            throw new Error(`File not found or not accessible: ${dir}`);
         }
         return JSON.parse(fs_extra_1.default.readFileSync(dir, 'utf-8'));
     }
